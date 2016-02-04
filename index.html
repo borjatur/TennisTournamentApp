@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Proyect Tennis</title>
+  <link href="./assets/css/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <header id="app-header"><img id="logo" src="./assets/img/logo-app.gif"></header>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4" id="playerBox">
+        <h2>Add Players with ranking</h2>
+        <form id="addPlayer"class="form-inline">
+          <div class="form-group">
+            <input type="text" class="form-control input-md" name="playerName" placeholder="Player name" required/>
+            <input type="text" class="form-control input-xs" name="playerRank" placeholder="Rank" required/>
+            <button type="submit" class="btn btn-primary">Add player</button>
+          </div>
+        </form>
+        <div class="row">
+          <div class="col-xs-12">
+            <p id="errorsummary" class="text-danger"></p>
+          </div>
+        </div>
+        <ul class="playerList list-group">
+        </ul>
+        <div class="row" style="text-align:center">
+          <button class="createTournament btn btn-primary" style="display:none">Generate Tournamet</button>
+          <button class="removeTournament btn btn-primary" style="display:none">Remove Tournamet</button>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-8" id="graph">
+        <main id="tournament-container">
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <script src="jspm_packages/system.js"></script>
+  <script src="config.js"></script>
+  <script>
+  System.import('./app/main.js');
+  </script>
+</body>
+</html>

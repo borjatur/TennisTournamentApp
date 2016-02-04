@@ -1,0 +1,100 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+header {
+  background-image: url(../img/header-app.png);
+  opacity: 0.7;
+  min-height: 200px;
+  text-align: center;
+}
+
+#logo {
+    opacity: 1;
+}
+
+#graph {
+  margin-top: 150px;
+}
+
+h1,h2 {
+  font-family: 'Montserrat' !important;
+  text-align: center;
+}
+
+#addPlayer {
+    text-align: center;
+}
+
+#errorsummary {
+  text-align: center;
+}
+
+.winner {
+  text-align: center;
+  color: blue;
+  border: 1px solid #aaa;
+}
+
+.input-xs {
+  width: 70px !important;
+}
+.input-md {
+  width: 300px !important;
+}
+
+.playerList {
+  margin: 40px auto;
+  max-width: 400px;
+}
+
+.list-group-item>.badge {
+    margin-right: 40px !important;
+}
+
+/* Flex Layout Specifics */
+main{
+  display:flex;
+  flex-direction:row;
+}
+.round{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  width:200px;
+  list-style:none;
+  padding:0;
+}
+.round .spacer{ flex-grow:1; }
+.round .spacer:first-child,
+.round .spacer:last-child{ flex-grow:.5; }
+
+.round .game-spacer{
+  flex-grow:1;
+}
+
+/*  General Styles */
+a {
+  float: right;
+}
+
+li.game{
+  padding-left:20px;
+}
+
+li.game.winner{
+  font-weight:bold;
+}
+li.game span{
+  float:right;
+  margin-right:5px;
+}
+
+li.game-top{ border-bottom:1px solid #aaa; }
+
+li.game-spacer{
+  border-right:1px solid #aaa;
+  min-height:40px;
+}
+
+li.game-bottom{
+  border-top:1px solid #aaa;
+}
